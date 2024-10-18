@@ -1,0 +1,21 @@
+<button id="tooltipButton" class="btn btn-secondary" data-bs-
+toggle="tooltip" title="Tooltip en Bootstrap">
+
+     Hover para ver Tooltip
+</button>
+
+<script>
+     var tooltipTrigger = new
+bootstrap.Tooltip(document.getElementById('tooltipButton'));
+
+    document.getElementById('tooltipButton').addEventListener('show.bs.toolt ip',
+ function () {
+     console.log('Tooltip mostrado');
+});
+    document.getElementById('tooltipButton').addEventListener('hide.bs.toolt ip',
+ function () {
+     console.log('Tooltip ocultado');
+});
+
+
+</script>
